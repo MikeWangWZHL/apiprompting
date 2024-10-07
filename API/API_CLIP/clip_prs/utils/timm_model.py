@@ -22,7 +22,7 @@ try:
 except ImportError:
     timm = None
 
-from utils.misc import freeze_batch_norm_2d
+from misc import freeze_batch_norm_2d
 
 
 class TimmModel(nn.Module):

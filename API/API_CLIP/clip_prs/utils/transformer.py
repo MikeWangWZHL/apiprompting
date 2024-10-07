@@ -9,8 +9,8 @@ from torch.utils.checkpoint import checkpoint
 import numbers
 import einops 
 import numpy as np
-from utils.misc import to_2tuple
-from utils.hook import HookManager
+from misc import to_2tuple
+from hook import HookManager
 
 
 class LayerNorm(nn.Module):

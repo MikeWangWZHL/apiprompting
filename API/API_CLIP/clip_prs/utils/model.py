@@ -14,11 +14,11 @@ from torch import nn
 from torch.utils.checkpoint import checkpoint
 
 
-from utils.modified_resnet import ModifiedResNet
-from utils.timm_model import TimmModel
-from utils.transformer import LayerNorm, QuickGELU, VisionTransformer, TextTransformer, Attention
-from utils.misc import to_2tuple
-from utils.hook import HookManager
+from modified_resnet import ModifiedResNet
+from timm_model import TimmModel
+from transformer import LayerNorm, QuickGELU, VisionTransformer, TextTransformer, Attention
+from misc import to_2tuple
+from hook import HookManager
 
 
 @dataclass

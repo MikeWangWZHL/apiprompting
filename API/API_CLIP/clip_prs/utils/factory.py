@@ -9,14 +9,14 @@ from typing import Any, Dict, Optional, Tuple, Union
 
 import torch
 
-from utils.constants import OPENAI_DATASET_MEAN, OPENAI_DATASET_STD
-from utils.model import CLIP, convert_to_custom_text_state_dict,\
+from constants import OPENAI_DATASET_MEAN, OPENAI_DATASET_STD
+from model import CLIP, convert_to_custom_text_state_dict,\
     resize_pos_embed, get_cast_dtype
-from utils.openai_models import load_openai_model
-from utils.pretrained import is_pretrained_cfg, get_pretrained_cfg, download_pretrained,\
+from openai_models import load_openai_model
+from pretrained import is_pretrained_cfg, get_pretrained_cfg, download_pretrained,\
     list_pretrained_tags_by_model, download_pretrained_from_hf
-from utils.transform import image_transform, AugmentationCfg
-from utils.tokenizer import HFTokenizer, tokenize
+from transform import image_transform, AugmentationCfg
+from tokenizer import HFTokenizer, tokenize
 
 
 HF_HUB_PREFIX = 'hf-hub:'

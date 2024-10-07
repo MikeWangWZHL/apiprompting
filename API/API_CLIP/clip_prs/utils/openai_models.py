@@ -9,9 +9,9 @@ from typing import List, Optional, Union
 
 import torch
 
-from utils.constants import OPENAI_DATASET_MEAN, OPENAI_DATASET_STD
-from utils.model import build_model_from_openai_state_dict, get_cast_dtype
-from utils.pretrained import *
+from constants import OPENAI_DATASET_MEAN, OPENAI_DATASET_STD
+from model import build_model_from_openai_state_dict, get_cast_dtype
+from pretrained import *
 
 __all__ = ["list_openai_models", "load_openai_model"]
 
